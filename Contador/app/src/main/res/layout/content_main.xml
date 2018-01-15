@@ -11,10 +11,11 @@
     <TextView
         android:id="@+id/contadorPulsaciones"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contador"
+        android:layout_height="51dp"
+        android:text="Contador:"
+        android:textSize="30sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="16dp" />
 
     <Button
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Resetear"
+        android:onClick="reseteaContador"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="146dp"
         tools:layout_editor_absoluteY="231dp" />
@@ -31,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Incrementa"
+        android:onClick="incrementaContador"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="155dp" />
@@ -40,6 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Decrementa"
+        android:onClick="restaContador"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="135dp"
         tools:layout_editor_absoluteY="302dp" />
