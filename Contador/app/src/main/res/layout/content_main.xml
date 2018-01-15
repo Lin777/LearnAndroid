@@ -4,65 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.lin777.contador.MainActivity"
-    tools:showIn="@layout/activity_main"
-    android:orientation="vertical">
+    tools:showIn="@layout/activity_main">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:padding="5dp">
+
         <TextView
-            android:id="@+id/contadorPulsaciones"
+            android:id="@+id/tituloTexto"
             android:layout_width="wrap_content"
-            android:layout_height="51dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Contador:"
-            android:textSize="30sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="130dp"
-            tools:layout_editor_absoluteY="16dp" />
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/contador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="36sp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/incrementar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="incrementaContador"
+            android:text="+"
+            android:textSize="70dp"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="50dp"
+            android:layout_height="0dp" />
+        <Button
+            android:id="@+id/decrementar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="restaContador"
+            android:text="-"
+            android:textSize="70dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="bottom|center_horizontal">
+
         <Button
             android:id="@+id/resetea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resetear"
             android:onClick="reseteaContador"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="146dp"
-            tools:layout_editor_absoluteY="231dp" />
-    </LinearLayout>
+            android:text="Resetear" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/incrementar"
+        <EditText
+            android:id="@+id/n_reseteo"
+            android:layout_width="72sp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="0"
+            android:inputType="number"
+            android:textColor="@android:color/background_dark"
+            android:textColorLink="@android:color/darker_gray" />
+
+        <CheckBox
+            android:id="@+id/negativos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Incrementa"
-            android:onClick="incrementaContador"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="136dp"
-            tools:layout_editor_absoluteY="155dp" />
+            android:layout_weight="1"
+            android:text="Conteo negativo"
+            android:textSize="12sp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/decrementar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Decrementa"
-            android:onClick="restaContador"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="135dp"
-            tools:layout_editor_absoluteY="302dp" />
-    </LinearLayout>
+
 
 
 </LinearLayout>

@@ -15,7 +15,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         contador = 0;
-
     }
 
     public void incrementaContador(View vista){
@@ -34,7 +33,7 @@ public class MainActivity extends Activity {
     }
 
     public void mostrarResultados(){
-        TextView textoResultado = (TextView)findViewById(R.id.contadorPulsaciones);
-        textoResultado.setText("Contador: "+contador);
+        TextView textoResultado = (TextView)findViewById(R.id.contador);
+        textoResultado.setText(""+contador);
     }
 }
