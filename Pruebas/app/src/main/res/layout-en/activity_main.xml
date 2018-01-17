@@ -3,9 +3,9 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/bot_usa"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/texto_cancelar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Boton USA" />
+        android:layout_weight="1" />
 </LinearLayout>
