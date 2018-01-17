@@ -18,8 +18,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".InfoClase"
-            android:theme="@style/Theme.AppCompat.Dialog">
+        <activity android:name=".InfoClase">
         </activity>
 
     </application>

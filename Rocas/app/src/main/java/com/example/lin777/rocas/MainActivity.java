@@ -18,4 +18,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void salirApp(View vista){
+        finish();//con esto decimos al programa que salga de la aplicacion
+    }
+
 }
