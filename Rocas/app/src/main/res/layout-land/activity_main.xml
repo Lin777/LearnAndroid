@@ -52,7 +52,8 @@
                 android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/d_adicional" />
+                android:text="@string/d_adicional"
+                android:onClick="ejecutarInfo"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>
