@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.lin777.pruebas.MainActivity">
 
-    <Button
-        android:id="@+id/bot_es"
+    <ImageView
+        android:id="@+id/icono_edicion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Boton espaniol" />
+        android:layout_weight="1" />
 </LinearLayout>
