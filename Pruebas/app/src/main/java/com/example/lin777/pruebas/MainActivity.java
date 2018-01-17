@@ -11,8 +11,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView img = (ImageView)findViewById(R.id.icono_edicion);
 
-        img.setImageResource(android.R.drawable.ic_menu_edit);
     }
 }
